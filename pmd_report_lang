@@ -1,0 +1,164 @@
+.\commons-lang\src\main\java\org\apache\commons\lang3\RandomUtils.java:77:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'RandomUtils': 'SECURE_RANDOM_STRONG' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\main\java\org\apache\commons\lang3\StringUtils.java:2850:	AvoidBranchingStatementAsLastInLoop:	Avoid using a branching statement as the last in a loop.
+.\commons-lang\src\main\java\org\apache\commons\lang3\ThreadUtils.java:218:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\main\java\org\apache\commons\lang3\ThreadUtils.java:218:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\main\java\org\apache\commons\lang3\ThreadUtils.java:242:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\main\java\org\apache\commons\lang3\ThreadUtils.java:511:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\main\java\org\apache\commons\lang3\ThreadUtils.java:567:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\AnnotationUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ArchUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ArrayUtilsAddTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ArrayUtilsRemoveMultipleTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ArrayUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ArrayUtilsTest.java:241:	OverrideBothEqualsAndHashcode:	Ensure you override both equals() and hashCode()
+.\commons-lang\src\test\java\org\apache\commons\lang3\BooleanUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\CharRangeTest.java:19:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\CharSequenceUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\CharSetTest.java:19:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\CharSetUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\CharUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassPathUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:552:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:553:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:580:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'org.apache.commons.lang3': 'ClassUtilsTest' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:582:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'org.apache.commons.lang3': 'ClassUtilsTest' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:1183:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:1184:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:1185:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\ClassUtilsTest.java:1186:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.util': 'Map' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\DoubleRangeTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\EnumUtilsTest.java:19:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\FunctionsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\IntegerRangeTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\LocaleUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\LongRangeTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ObjectUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\RandomStringUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\RandomUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\RangeTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\SerializationUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\SerializationUtilsTest.java:49:	UnusedFormalParameter:	Avoid unused method parameters such as 'in'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\StreamsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\StreamsTest.java:152:	UselessParentheses:	Useless parentheses.
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringEscapeUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsContainsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsEqualsIndexOfTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:725:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'StringUtilsTest': 'WHITESPACE' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:726:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'StringUtilsTest': 'NON_WHITESPACE' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:726:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'StringUtilsTest': 'NON_WHITESPACE' is already in scope because it is declared in an enclosing type
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:2612:	AvoidUsingHardCodedIP:	Do not hard code the IP address ${variableName}
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:2646:	AvoidUsingHardCodedIP:	Do not hard code the IP address ${variableName}
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:2947:	AvoidUsingHardCodedIP:	Do not hard code the IP address expectedResults
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:2948:	AvoidUsingHardCodedIP:	Do not hard code the IP address ${variableName}
+.\commons-lang\src\test\java\org\apache\commons\lang3\StringUtilsTest.java:2957:	AvoidUsingHardCodedIP:	Do not hard code the IP address expectedResults
+.\commons-lang\src\test\java\org\apache\commons\lang3\SystemPropertiesTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\SystemUtilsTest.java:20:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:20:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:70:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Thread': 'currentThread' is already in scope
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:80:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Thread': 'currentThread' is already in scope
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:97:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:98:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:99:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:100:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:101:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:102:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:103:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:104:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:247:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:274:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:315:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:316:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ThreadUtilsTest.java:376:	AvoidThreadGroup:	Avoid using java.lang.ThreadGroup; it is not thread safe
+.\commons-lang\src\test\java\org\apache\commons\lang3\ValidateTest.java:19:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\CompareToBuilderTest.java:152:	UnusedFormalParameter:	Avoid unused method parameters such as 'excludeFields'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\DiffBuilderTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\EqualsBuilderTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\EqualsBuilderTest.java:179:	OverrideBothEqualsAndHashcode:	Ensure you override both equals() and hashCode()
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\EqualsBuilderTest.java:261:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'z'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\EqualsBuilderTest.java:335:	UnusedFormalParameter:	Avoid unused constructor parameters such as 't'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\EqualsBuilderTest.java:1129:	UselessOperationOnImmutable:	The result of an operation on an immutable object is ignored
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\HashCodeBuilderTest.java:40:	OverrideBothEqualsAndHashcode:	Ensure you override both equals() and hashCode()
+.\commons-lang\src\test\java\org\apache\commons\lang3\builder\HashCodeBuilderTest.java:52:	OverrideBothEqualsAndHashcode:	Ensure you override both equals() and hashCode()
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\AbstractConcurrentInitializerCloseAndExceptionsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\AbstractConcurrentInitializerTest.java:60:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\AtomicInitializerNonObjectTest.java:40:	PrimitiveWrapperInstantiation:	Do not use `new Integer(...)`, prefer `Integer.valueOf(...)`
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\AtomicInitializerNonObjectTest.java:55:	PrimitiveWrapperInstantiation:	Do not use `new Integer(...)`, prefer `Integer.valueOf(...)`
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\BackgroundInitializerSupplierTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\BackgroundInitializerTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\BasicThreadFactoryTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\ConcurrentUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\EventCountCircuitBreakerTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\EventCountCircuitBreakerTest.java:400:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\MultiBackgroundInitializerSupplierTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\MultiBackgroundInitializerTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\MultiBackgroundInitializerTest.java:113:	OverrideBothEqualsAndHashcode:	Ensure you override both equals() and hashCode()
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\TimedSemaphoreTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\TimedSemaphoreTest.java:82:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'Thread': 'currentThread' is already in scope
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\TimedSemaphoreTest.java:178:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\locks\LockingVisitorsTest.java:51:	UnusedFormalParameter:	Avoid unused method parameters such as 'runTimeCheck'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\locks\LockingVisitorsTest.java:55:	UnusedLocalVariable:	Avoid unused local variables such as 'startTimeMillis'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\concurrent\locks\LockingVisitorsTest.java:77:	UnusedLocalVariable:	Avoid unused local variables such as 'endTimeMillis'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\event\EventListenerSupportTest.java:206:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'java.lang.reflect': 'InvocationHandler' is already in scope because it is imported in this file
+.\commons-lang\src\test\java\org\apache\commons\lang3\event\EventUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\exception\AbstractExceptionContextTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\exception\ExceptionUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\exception\ExceptionUtilsTest.java:113:	UnusedPrivateMethod:	Avoid unused private methods such as 'redeclareCheckedException()'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\function\FailableFunctionsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\function\ObjectsTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\FractionTest.java:19:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\NumberUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\NumberUtilsTest.java:486:	BigIntegerInstantiation:	Don't create instances of already existing BigInteger and BigDecimal (ZERO, ONE, TEN)
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\NumberUtilsTest.java:759:	AvoidUsingOctalValues:	Do not start a literal by 0 unless its an octal value
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\NumberUtilsTest.java:760:	AvoidUsingOctalValues:	Do not start a literal by 0 unless its an octal value
+.\commons-lang\src\test\java\org\apache\commons\lang3\math\NumberUtilsTest.java:763:	AvoidUsingOctalValues:	Do not start a literal by 0 unless its an octal value
+.\commons-lang\src\test\java\org\apache\commons\lang3\mutable\MutableBooleanTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:68:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'bc'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:73:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'd'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:78:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'i'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:83:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'i'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:88:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'first'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:96:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'i'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:101:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'o'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\ConstructorUtilsTest.java:106:	UnusedFormalParameter:	Avoid unused constructor parameters such as 's'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\FieldUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\MethodUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\TypeUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\testbed\PublicChild.java:33:	UnusedPrivateMethod:	Avoid unused private methods such as 'privateAnnotatedMethod()'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\testbed\StringParameterizedChild.java:37:	UnusedPrivateMethod:	Avoid unused private methods such as 'privateAnnotatedMethod(String)'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\reflect\testbed\StringParameterizedChild.java:37:	UnusedFormalParameter:	Avoid unused method parameters such as 't'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\stream\StreamsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\stream\StreamsTest.java:217:	UselessParentheses:	Useless parentheses.
+.\commons-lang\src\test\java\org\apache\commons\lang3\text\ExtendedMessageFormatTest.java:194:	UnusedFormalParameter:	Avoid unused method parameters such as 'registryUnused'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\text\StrBuilderTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\text\StrSubstitutorTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\text\StrTokenizerTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\text\WordUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\DateUtilsTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\DurationFormatUtilsTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\FastDateFormatTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\FastDateFormatTest.java:310:	UnusedLocalVariable:	Avoid unused local variables such as 'sdfTime'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\FastDateFormatTest.java:313:	UnusedLocalVariable:	Avoid unused local variables such as 'fdfTime'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\FastDateParserTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\StopWatchTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\time\StopWatchTest.java:508:	UnusedPrivateMethod:	Avoid unused private methods such as 'throwIOException()'.
+.\commons-lang\src\test\java\org\apache\commons\lang3\tuple\ImmutablePairTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\tuple\ImmutableTripleTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\tuple\PairTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\tuple\TripleTest.java:17:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:18:	TooManyStaticImports:	Too many static imports may lead to messy code
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:740:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:747:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:754:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1137:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1202:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1442:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1449:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1459:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1588:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1595:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1605:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1624:	EmptyCatchBlock:	Avoid empty catch blocks
+.\commons-lang\src\test\java\org\apache\commons\lang3\util\FluentBitSetTest.java:1667:	EmptyCatchBlock:	Avoid empty catch blocks
