@@ -12,6 +12,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Visitor which finds private attributes with no getters in public classes of a given
+ * Java compilation unit.
+ */
 public class GetterFinderVisitor extends VoidVisitorAdapter<GetterFinderVisitor.VisitorParam> {
 
     @Override
@@ -39,7 +43,8 @@ public class GetterFinderVisitor extends VoidVisitorAdapter<GetterFinderVisitor.
                 if (fieldDecl.isPrivate())
                     fieldNames.add(varDecl.getNameAsString());
                 else if (fieldDecl.isClassOrInterfaceDeclaration())
-                    fieldDecl.asClassOrInterfaceDeclaration().accept(this, param);
+                    fieldDecl.asClassOrInterfaceDeclaration()
+                            .accept(this, param);
 
         // For each field, find if they have a getter.
         for (String fieldName : fieldNames) {
@@ -62,10 +67,26 @@ public class GetterFinderVisitor extends VoidVisitorAdapter<GetterFinderVisitor.
         }
     }
 
+    /**
+     * Parameter of this visitor's methods.
+     */
     public static class VisitorParam {
+
+        /**
+         * PrintWriter to the output file.
+         */
         final PrintWriter output;
+
+        /**
+         * Package name of the current compilation unit.
+         */
         String packageName;
 
+        /**
+         * Constructor of the class.
+         *
+         * @param output PrintWriter to the output file.
+         */
         public VisitorParam(PrintWriter output) {
             this.output = output;
         }

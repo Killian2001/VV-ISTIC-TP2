@@ -8,8 +8,18 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 
+/**
+ * Main class of the GetterFinder program, which finds every private attributes with
+ * no getter in a given Java project.
+ */
 public class GetterFinder {
 
+    /**
+     * Entry point of the program.
+     *
+     * @param args Program's arguments : should contain the folder of a project.
+     * @throws IOException If any I/O error occurs.
+     */
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
             System.err.println(
@@ -25,6 +35,14 @@ public class GetterFinder {
         }
     }
 
+    /**
+     * Explore recursively a directory in order to find <code>.java</code> files
+     * in it, and find attributes with no getters in these files.
+     *
+     * @param file   Directory's file.
+     * @param output Output file's print writer.
+     * @throws IOException If any I/O error occur.
+     */
     private static void exploreDirectory(File file, PrintWriter output) throws IOException {
         // If directory, explore its sub directories.
         if (file.isDirectory() && !Files.isSymbolicLink(file.toPath())) {
@@ -41,6 +59,13 @@ public class GetterFinder {
             findGetters(file, output);
     }
 
+    /**
+     * Finds private attributes with no getter in a given Java file.
+     *
+     * @param inputFile Java file.
+     * @param output    Output file's print writer.
+     * @throws IOException If any I/O error occur.
+     */
     private static void findGetters(File inputFile, PrintWriter output) throws IOException {
         GetterFinderVisitor visitor = new GetterFinderVisitor();
         GetterFinderVisitor.VisitorParam param = new GetterFinderVisitor.VisitorParam(output);
