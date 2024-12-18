@@ -1,20 +1,12 @@
 package fr.istic.vv_tp2.ex4;
 
 import com.github.javaparser.StaticJavaParser;
-import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.FieldDeclaration;
-import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.body.VariableDeclarator;
-import com.github.javaparser.ast.nodeTypes.NodeWithName;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.List;
 
 public class GetterFinder {
 
@@ -50,42 +42,10 @@ public class GetterFinder {
     }
 
     private static void findGetters(File inputFile, PrintWriter output) throws IOException {
-        CompilationUnit unit = StaticJavaParser.parse(inputFile);
-        String packageName = unit.getPackageDeclaration()
-                .map(NodeWithName::getNameAsString)
-                .orElse("(default)");
+        GetterFinderVisitor visitor = new GetterFinderVisitor();
+        GetterFinderVisitor.VisitorParam param = new GetterFinderVisitor.VisitorParam(output);
 
-        for (ClassOrInterfaceDeclaration intClass : unit.findAll(
-                ClassOrInterfaceDeclaration.class)) {
-            // Filtering interfaces and non-public classes.
-            if (intClass.isInterface() || !intClass.isPublic())
-                continue;
-
-            List<String> fieldNames = new ArrayList<>();
-
-            // Gathering fields identifiers
-            for (FieldDeclaration fieldDecl : intClass.getFields())
-                for (VariableDeclarator varDecl : fieldDecl.getVariables())
-                    fieldNames.add(varDecl.getNameAsString());
-
-            // For each field, find if they have a getter.
-            for (String fieldName : fieldNames) {
-                String getterName = "get" + Character.toUpperCase(fieldName.charAt(0)) +
-                        (fieldName.length() > 1 ? fieldName.substring(1) : "");
-
-                // List of getters.
-                List<MethodDeclaration> getters = intClass.getMethodsByName(getterName)
-                        .stream()
-                        .filter(MethodDeclaration::isPublic)
-                        .toList();
-
-                if (getters.isEmpty()) {
-                    String csvLine =
-                            String.format("%s,%s,%s", fieldName, intClass.getNameAsString(),
-                                    packageName);
-                    output.println(csvLine);
-                }
-            }
-        }
+        StaticJavaParser.parse(inputFile)
+                .accept(visitor, param);
     }
 }
