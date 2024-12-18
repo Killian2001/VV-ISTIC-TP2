@@ -2,18 +2,12 @@ package fr.istic.vv_tp2.ex5;
 
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.FieldDeclaration;
-import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.body.Parameter;
-import com.github.javaparser.ast.nodeTypes.NodeWithName;
 
 import fr.istic.vv_tp2.ex5.export.BarplotCycloExporter;
 import fr.istic.vv_tp2.ex5.export.CSVCycloExporter;
 import fr.istic.vv_tp2.ex5.export.CycloExporter;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
@@ -85,84 +79,16 @@ public class CyclomaticComplexity {
         String fileName = file.getName();
         int dotIndex = fileName.lastIndexOf(".");
         if (fileName.substring(dotIndex == -1 ? 0 : dotIndex)
-                .equals(".java"))
-            exploreCompilationUnit(file, cycloEntries);
-    }
+                .equals(".java")) {
+            CompilationUnit unit = StaticJavaParser.parse(file);
 
-    /**
-     * Extract cyclomatic complexity of methods from a given compilation unit.
-     * @param inputFile Compilation unit's file.
-     * @param cycloEntries List of cyclomatic complexity entries to be filled by inspecting
-     *                     the file.
-     * @throws FileNotFoundException If the file is not found.
-     */
-    private static void exploreCompilationUnit(File inputFile, List<CycloEntry> cycloEntries)
-            throws FileNotFoundException {
-        CompilationUnit unit = StaticJavaParser.parse(inputFile);
+            // Create the compilation unit visitor.
+            CyclomaticUnitVisitor visitor = new CyclomaticUnitVisitor();
+            CyclomaticUnitVisitor.CycloUnitParam param =
+                    new CyclomaticUnitVisitor.CycloUnitParam(cycloEntries);
 
-        // Get the package name.
-        String packageName = unit.getPackageDeclaration()
-                .map(NodeWithName::getNameAsString)
-                .orElse("(default)");
-
-        for (ClassOrInterfaceDeclaration intClass : unit.findAll(
-                ClassOrInterfaceDeclaration.class))
-            exploreClass(intClass, cycloEntries, packageName);
-    }
-
-    /**
-     *
-     * @param intClass
-     * @param cycloEntries
-     * @param packageName
-     */
-    private static void exploreClass(ClassOrInterfaceDeclaration intClass,
-            List<CycloEntry> cycloEntries,
-            String packageName) {
-        // Filtering interfaces.
-        if (intClass.isInterface())
-            return;
-
-        String className = intClass.getNameAsString();
-
-        // Iterate over all methods of the class.
-        for (MethodDeclaration method : intClass.getMethods()) {
-            if (method.getBody()
-                    .isEmpty())
-                continue;
-
-            String methodName = method.getNameAsString();
-
-            // Build the list of parameters.
-            List<Parameter> params = method.getParameters();
-            List<String> paramStrings =
-                    params.stream()
-                            .map(p -> p.getTypeAsString() + " " + p.getNameAsString())
-                            .toList();
-            String paramList = "\"(" + String.join(", ", paramStrings) + ")\"";
-
-            // Compute the cyclomatic complexity.
-            int cyclomaticComplexity = calculateCyclomaticComplexity(method);
-
-            // Add the entry.
-            cycloEntries.add(new CycloEntry(packageName, className, methodName, paramList,
-                    cyclomaticComplexity));
-
-            // Explore subclasses.
-            for (FieldDeclaration field : intClass.getFields())
-                field.ifClassOrInterfaceDeclaration(
-                        cls -> exploreClass(cls, cycloEntries, packageName));
+            unit.accept(visitor, param);
         }
-    }
-
-    private static int calculateCyclomaticComplexity(MethodDeclaration declaration) {
-        CyclomaticComplexityVisitor visitor = new CyclomaticComplexityVisitor();
-        CyclomaticComplexityVisitor.CycloCounter counter =
-                new CyclomaticComplexityVisitor.CycloCounter();
-
-        declaration.accept(visitor, counter);
-
-        return counter.getCyclomaticNumber();
     }
 
     public static class CycloEntry {

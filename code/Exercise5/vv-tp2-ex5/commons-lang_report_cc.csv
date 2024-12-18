@@ -8742,7 +8742,6 @@ org.apache.commons.lang3.util,FluentBitSetTest,test_clone,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_Constructor,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_ConstructorInt,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_equals,"()",1
-org.apache.commons.lang3.util,FluentBitSetTest,testFlip,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_getI,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_getII,"()",1
 org.apache.commons.lang3.util,FluentBitSetTest,test_hashCode,"()",1
