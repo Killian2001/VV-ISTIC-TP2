@@ -1,0 +1,916 @@
+Package,Declaring class,Method,Params,CC
+org.apache.commons.cli,PatternOptionBuilder,getValueType,"(char ch)",18
+org.apache.commons.cli,OptionValidatorTest,setup,"()",15
+org.apache.commons.cli.help,TextHelpAppendable,adjustTableFormat,"(TableDefinition table)",9
+org.apache.commons.cli,OptionValidatorTest,optionParameters,"()",9
+org.apache.commons.cli.help,TextStyle,pad,"(boolean addIndent, CharSequence text)",8
+org.apache.commons.cli.bug,BugsTest,test11458,"()",8
+org.apache.commons.cli,Parser,parse,"(Options options, String[] arguments, Properties properties, boolean stopAtNonOption)",7
+org.apache.commons.cli,Parser,processArgs,"(Option opt, ListIterator<String> iter)",7
+org.apache.commons.cli,HelpFormatter,appendOptions,"(A sb, int width, Options options, int leftPad, int descPad)",5
+org.apache.commons.cli.help,TextHelpAppendable,indexOfWrap,"(CharSequence text, int width, int startPos)",5
+org.apache.commons.cli.help,TextHelpAppendable,appendTable,"(TableDefinition rawTable)",5
+org.apache.commons.cli.help,TextHelpAppendable,writeColumnQueues,"(List<Queue<String>> columnQueues, List<TextStyle> styles)",5
+org.apache.commons.cli,OptionValidatorTest,testExclusivity,"()",5
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendList,"()",5
+org.apache.commons.cli.help,UtilTest,charArgs,"()",5
+org.apache.commons.cli,AmbiguousOptionException,createMessage,"(String option, Collection<String> matchingOptions)",3
+org.apache.commons.cli,CommandLine,getOptionObject,"(String opt)",3
+org.apache.commons.cli,CommandLine,getOptionProperties,"(Option option)",3
+org.apache.commons.cli,CommandLine,getOptionProperties,"(String opt)",3
+org.apache.commons.cli,CommandLine,getOptionValues,"(Option option)",3
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(Option option, Supplier<T> defaultValue)",3
+org.apache.commons.cli,CommandLine,processPropertiesFromValues,"(Properties props, List<String> values)",3
+org.apache.commons.cli,DefaultParser,getLongPrefix,"(String token)",3
+org.apache.commons.cli,DefaultParser,handleConcatenatedOptions,"(String token)",3
+org.apache.commons.cli,DefaultParser,handleProperties,"(Properties properties)",3
+org.apache.commons.cli,DefaultParser,isNegativeNumber,"(String token)",3
+org.apache.commons.cli,DefaultParser,parse,"(Options options, String[] arguments, Properties properties, boolean stopAtNonOption)",3
+org.apache.commons.cli,GnuParser,flatten,"(Options options, String[] arguments, boolean stopAtNonOption)",3
+org.apache.commons.cli,HelpFormatter,appendOptionGroup,"(StringBuilder buff, OptionGroup group)",3
+org.apache.commons.cli,HelpFormatter,appendWrappedText,"(A appendable, int width, int nextLineTabStop, String text)",3
+org.apache.commons.cli,HelpFormatter,findWrapPos,"(String text, int width, int startPos)",3
+org.apache.commons.cli,HelpFormatter,printOptions,"(PrintWriter pw, int width, Options options, int leftPad, int descPad)",3
+org.apache.commons.cli,HelpFormatter,printUsage,"(PrintWriter pw, int width, String app, Options options)",3
+org.apache.commons.cli,HelpFormatter,renderOptions,"(StringBuffer sb, int width, Options options, int leftPad, int descPad)",3
+org.apache.commons.cli,HelpFormatter,renderWrappedText,"(StringBuffer sb, int width, int nextLineTabStop, String text)",3
+org.apache.commons.cli,HelpFormatter,renderWrappedTextBlock,"(A appendable, int width, int nextLineTabStop, String text)",3
+org.apache.commons.cli,HelpFormatter,rtrim,"(String s)",3
+org.apache.commons.cli,MissingOptionException,createMessage,"(List<?> missingOptions)",3
+org.apache.commons.cli,Option,clone,"()",3
+org.apache.commons.cli,OptionGroup,toString,"()",3
+org.apache.commons.cli,OptionValidator,search,"(char[] chars, char c)",3
+org.apache.commons.cli,Options,addOptionGroup,"(OptionGroup group)",3
+org.apache.commons.cli,Options,addOptions,"(Options options)",3
+org.apache.commons.cli,Options,getMatchingOptions,"(String opt)",3
+org.apache.commons.cli,Parser,processProperties,"(Properties properties)",3
+org.apache.commons.cli,PatternOptionBuilder,parsePattern,"(String pattern)",3
+org.apache.commons.cli,PosixParser,burstToken,"(String token, boolean stopAtNonOption)",3
+org.apache.commons.cli,PosixParser,flatten,"(Options options, String[] arguments, boolean stopAtNonOption)",3
+org.apache.commons.cli,TypeHandler,createValue,"(String string, Class<T> clazz)",3
+org.apache.commons.cli,TypeHandler,createValueUnchecked,"(String string, Class<T> clazz)",3
+org.apache.commons.cli.help,AbstractHelpFormatter,toSyntaxOptions,"(Iterable<Option> options, Function<Option,OptionGroup> lookup)",3
+org.apache.commons.cli.help,AbstractHelpFormatter,toSyntaxOptions,"(OptionGroup group)",3
+org.apache.commons.cli.help,HelpFormatter,getTableDefinition,"(Iterable<Option> options)",3
+org.apache.commons.cli.help,TextHelpAppendable,makeColumnQueue,"(CharSequence columnData, TextStyle style)",3
+org.apache.commons.cli.help,TextHelpAppendable,makeColumnQueues,"(List<String> columnData, List<TextStyle> styles)",3
+org.apache.commons.cli.help,TextHelpAppendable,printQueue,"(Queue<String> queue)",3
+org.apache.commons.cli.help,Util,indexOfNonWhitespace,"(CharSequence text, int startPos)",3
+org.apache.commons.cli.help,Util,rtrim,"(String s)",3
+org.apache.commons.cli.bug,BugCLI266Test,testOptionComparatorDefaultOrder,"()",3
+org.apache.commons.cli.bug,BugCLI266Test,testOptionComparatorInsertedOrder,"()",3
+org.apache.commons.cli.bug,BugCLI312Test,testPropertyStyleOption_withGetOptions,"()",3
+org.apache.commons.cli.example,WeirdOptionFormat,apply,"(Iterable<Option> options)",3
+org.apache.commons.cli,OptionBuilder,create,"(String opt)",2
+org.apache.commons.cli,CommandLineTest,testHasOptionNoDeprecationHandler,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, boolean has, boolean grpDep, boolean hasGrp, Option grpOpt)",2
+org.apache.commons.cli,CommandLineTest,testHasOptionNullDeprecationHandler,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, boolean has, boolean grpDep, boolean hasGrp, Option grpOpt)",2
+org.apache.commons.cli,CommandLineTest,testNoDeprecationHandler,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, String optValue, boolean grpDep, String grpValue, Option grpOpt)",2
+org.apache.commons.cli,TypeHandlerTest,testRegister,"()",2
+org.apache.commons.cli.bug,BugsTest,test13666,"()",2
+org.apache.commons.cli,AlreadySelectedException,getOption,"()",1
+org.apache.commons.cli,AlreadySelectedException,getOptionGroup,"()",1
+org.apache.commons.cli,AmbiguousOptionException,getMatchingOptions,"()",1
+org.apache.commons.cli,BasicParser,flatten,"(Options options, String[] arguments, boolean stopAtNonOption)",1
+org.apache.commons.cli,CommandLine,builder,"()",1
+org.apache.commons.cli,CommandLine,addArg,"(String arg)",1
+org.apache.commons.cli,CommandLine,addOption,"(Option opt)",1
+org.apache.commons.cli,CommandLine,get,"(Supplier<T> supplier)",1
+org.apache.commons.cli,CommandLine,getArgList,"()",1
+org.apache.commons.cli,CommandLine,getArgs,"()",1
+org.apache.commons.cli,CommandLine,getOptionObject,"(char opt)",1
+org.apache.commons.cli,CommandLine,getOptions,"()",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(char opt)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(char opt, String defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(char opt, Supplier<String> defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(Option option)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(Option option, String defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(Option option, Supplier<String> defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(OptionGroup optionGroup)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(OptionGroup optionGroup, String defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(OptionGroup optionGroup, Supplier<String> defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(String opt)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(String opt, String defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValue,"(String opt, Supplier<String> defaultValue)",1
+org.apache.commons.cli,CommandLine,getOptionValues,"(char opt)",1
+org.apache.commons.cli,CommandLine,getOptionValues,"(OptionGroup optionGroup)",1
+org.apache.commons.cli,CommandLine,getOptionValues,"(String opt)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(char opt)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(char opt, Supplier<T> defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(char opt, T defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(Option option)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(Option option, T defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(OptionGroup optionGroup)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(OptionGroup optionGroup, Supplier<T> defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(OptionGroup optionGroup, T defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(String opt)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(String opt, Supplier<T> defaultValue)",1
+org.apache.commons.cli,CommandLine,getParsedOptionValue,"(String opt, T defaultValue)",1
+org.apache.commons.cli,CommandLine,handleDeprecated,"(Option option)",1
+org.apache.commons.cli,CommandLine,hasOption,"(char opt)",1
+org.apache.commons.cli,CommandLine,hasOption,"(Option opt)",1
+org.apache.commons.cli,CommandLine,hasOption,"(OptionGroup optionGroup)",1
+org.apache.commons.cli,CommandLine,hasOption,"(String opt)",1
+org.apache.commons.cli,CommandLine,iterator,"()",1
+org.apache.commons.cli,CommandLine,resolveOption,"(String opt)",1
+org.apache.commons.cli,Builder,addArg,"(String arg)",1
+org.apache.commons.cli,Builder,addOption,"(Option opt)",1
+org.apache.commons.cli,Builder,build,"()",1
+org.apache.commons.cli,Builder,get,"()",1
+org.apache.commons.cli,Builder,setDeprecatedHandler,"(Consumer<Option> deprecatedHandler)",1
+org.apache.commons.cli,DefaultParser,builder,"()",1
+org.apache.commons.cli,DefaultParser,indexOfEqual,"(String token)",1
+org.apache.commons.cli,DefaultParser,checkRequiredArgs,"()",1
+org.apache.commons.cli,DefaultParser,checkRequiredOptions,"()",1
+org.apache.commons.cli,DefaultParser,getMatchingLongOptions,"(String token)",1
+org.apache.commons.cli,DefaultParser,handleLongOption,"(String token)",1
+org.apache.commons.cli,DefaultParser,handleLongOptionWithEqual,"(String token)",1
+org.apache.commons.cli,DefaultParser,handleLongOptionWithoutEqual,"(String token)",1
+org.apache.commons.cli,DefaultParser,handleOption,"(Option option)",1
+org.apache.commons.cli,DefaultParser,handleShortAndLongOption,"(String hyphenToken)",1
+org.apache.commons.cli,DefaultParser,handleToken,"(String token)",1
+org.apache.commons.cli,DefaultParser,handleUnknownToken,"(String token)",1
+org.apache.commons.cli,DefaultParser,isArgument,"(String token)",1
+org.apache.commons.cli,DefaultParser,isJavaProperty,"(String token)",1
+org.apache.commons.cli,DefaultParser,isLongOption,"(String token)",1
+org.apache.commons.cli,DefaultParser,isOption,"(String token)",1
+org.apache.commons.cli,DefaultParser,isShortOption,"(String token)",1
+org.apache.commons.cli,DefaultParser,parse,"(Options options, String[] arguments)",1
+org.apache.commons.cli,DefaultParser,parse,"(Options options, String[] arguments, boolean stopAtNonOption)",1
+org.apache.commons.cli,DefaultParser,parse,"(Options options, String[] arguments, Properties properties)",1
+org.apache.commons.cli,DefaultParser,stripLeadingAndTrailingQuotesDefaultOff,"(String token)",1
+org.apache.commons.cli,DefaultParser,stripLeadingAndTrailingQuotesDefaultOn,"(String token)",1
+org.apache.commons.cli,DefaultParser,updateRequiredOptions,"(Option option)",1
+org.apache.commons.cli,Builder,build,"()",1
+org.apache.commons.cli,Builder,get,"()",1
+org.apache.commons.cli,Builder,setAllowPartialMatching,"(boolean allowPartialMatching)",1
+org.apache.commons.cli,Builder,setDeprecatedHandler,"(Consumer<Option> deprecatedHandler)",1
+org.apache.commons.cli,Builder,setStripLeadingAndTrailingQuotes,"(Boolean stripLeadingAndTrailingQuotes)",1
+org.apache.commons.cli,DeprecatedAttributes,builder,"()",1
+org.apache.commons.cli,DeprecatedAttributes,getDescription,"()",1
+org.apache.commons.cli,DeprecatedAttributes,getSince,"()",1
+org.apache.commons.cli,DeprecatedAttributes,isForRemoval,"()",1
+org.apache.commons.cli,DeprecatedAttributes,toEmpty,"(String since)",1
+org.apache.commons.cli,DeprecatedAttributes,toString,"()",1
+org.apache.commons.cli,Builder,get,"()",1
+org.apache.commons.cli,Builder,setDescription,"(String description)",1
+org.apache.commons.cli,Builder,setForRemoval,"(boolean forRemoval)",1
+org.apache.commons.cli,Builder,setSince,"(String since)",1
+org.apache.commons.cli,HelpFormatter,builder,"()",1
+org.apache.commons.cli,HelpFormatter,createDefaultPrintWriter,"()",1
+org.apache.commons.cli,HelpFormatter,getDescription,"(Option option)",1
+org.apache.commons.cli,HelpFormatter,appendOption,"(StringBuilder buff, Option option, boolean required)",1
+org.apache.commons.cli,HelpFormatter,createPadding,"(int len)",1
+org.apache.commons.cli,HelpFormatter,determineMaxSinceLength,"(Options options)",1
+org.apache.commons.cli,HelpFormatter,getArgName,"()",1
+org.apache.commons.cli,HelpFormatter,getDescPadding,"()",1
+org.apache.commons.cli,HelpFormatter,getLeftPadding,"()",1
+org.apache.commons.cli,HelpFormatter,getLongOptPrefix,"()",1
+org.apache.commons.cli,HelpFormatter,getLongOptSeparator,"()",1
+org.apache.commons.cli,HelpFormatter,getNewLine,"()",1
+org.apache.commons.cli,HelpFormatter,getOptionComparator,"()",1
+org.apache.commons.cli,HelpFormatter,getOptPrefix,"()",1
+org.apache.commons.cli,HelpFormatter,getSyntaxPrefix,"()",1
+org.apache.commons.cli,HelpFormatter,getWidth,"()",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(int width, String cmdLineSyntax, String header, Options options, String footer)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(int width, String cmdLineSyntax, String header, Options options, String footer, boolean autoUsage)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(PrintWriter pw, int width, String cmdLineSyntax, String header, Options options, int leftPad, int descPad, String footer)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(PrintWriter pw, int width, String cmdLineSyntax, String header, Options options, int leftPad, int descPad, String footer, boolean autoUsage)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(String cmdLineSyntax, Options options)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(String cmdLineSyntax, Options options, boolean autoUsage)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(String cmdLineSyntax, String header, Options options, String footer)",1
+org.apache.commons.cli,HelpFormatter,printHelp,"(String cmdLineSyntax, String header, Options options, String footer, boolean autoUsage)",1
+org.apache.commons.cli,HelpFormatter,printUsage,"(PrintWriter pw, int width, String cmdLineSyntax)",1
+org.apache.commons.cli,HelpFormatter,printWrapped,"(PrintWriter pw, int width, int nextLineTabStop, String text)",1
+org.apache.commons.cli,HelpFormatter,printWrapped,"(PrintWriter pw, int width, String text)",1
+org.apache.commons.cli,HelpFormatter,setArgName,"(String name)",1
+org.apache.commons.cli,HelpFormatter,setDescPadding,"(int padding)",1
+org.apache.commons.cli,HelpFormatter,setLeftPadding,"(int padding)",1
+org.apache.commons.cli,HelpFormatter,setLongOptPrefix,"(String prefix)",1
+org.apache.commons.cli,HelpFormatter,setLongOptSeparator,"(String longOptSeparator)",1
+org.apache.commons.cli,HelpFormatter,setNewLine,"(String newline)",1
+org.apache.commons.cli,HelpFormatter,setOptionComparator,"(Comparator<Option> comparator)",1
+org.apache.commons.cli,HelpFormatter,setOptPrefix,"(String prefix)",1
+org.apache.commons.cli,HelpFormatter,setSyntaxPrefix,"(String prefix)",1
+org.apache.commons.cli,HelpFormatter,setWidth,"(int width)",1
+org.apache.commons.cli,Builder,get,"()",1
+org.apache.commons.cli,Builder,setPrintWriter,"(PrintWriter printWriter)",1
+org.apache.commons.cli,Builder,setShowDeprecated,"(boolean useDefaultFormat)",1
+org.apache.commons.cli,Builder,setShowDeprecated,"(Function<Option,String> deprecatedFormatFunction)",1
+org.apache.commons.cli,Builder,setShowSince,"(boolean showSince)",1
+org.apache.commons.cli,OptionComparator,compare,"(Option opt1, Option opt2)",1
+org.apache.commons.cli,MissingArgumentException,getOption,"()",1
+org.apache.commons.cli,MissingOptionException,getMissingOptions,"()",1
+org.apache.commons.cli,Option,builder,"()",1
+org.apache.commons.cli,Option,builder,"(String option)",1
+org.apache.commons.cli,Option,acceptsArg,"()",1
+org.apache.commons.cli,Option,add,"(String value)",1
+org.apache.commons.cli,Option,addValue,"(String value)",1
+org.apache.commons.cli,Option,clearValues,"()",1
+org.apache.commons.cli,Option,equals,"(Object obj)",1
+org.apache.commons.cli,Option,getArgName,"()",1
+org.apache.commons.cli,Option,getArgs,"()",1
+org.apache.commons.cli,Option,getConverter,"()",1
+org.apache.commons.cli,Option,getDeprecated,"()",1
+org.apache.commons.cli,Option,getDescription,"()",1
+org.apache.commons.cli,Option,getId,"()",1
+org.apache.commons.cli,Option,getKey,"()",1
+org.apache.commons.cli,Option,getLongOpt,"()",1
+org.apache.commons.cli,Option,getOpt,"()",1
+org.apache.commons.cli,Option,getSince,"()",1
+org.apache.commons.cli,Option,getType,"()",1
+org.apache.commons.cli,Option,getValue,"()",1
+org.apache.commons.cli,Option,getValue,"(int index)",1
+org.apache.commons.cli,Option,getValue,"(String defaultValue)",1
+org.apache.commons.cli,Option,getValues,"()",1
+org.apache.commons.cli,Option,getValueSeparator,"()",1
+org.apache.commons.cli,Option,getValuesList,"()",1
+org.apache.commons.cli,Option,hasArg,"()",1
+org.apache.commons.cli,Option,hasArgName,"()",1
+org.apache.commons.cli,Option,hasArgs,"()",1
+org.apache.commons.cli,Option,hashCode,"()",1
+org.apache.commons.cli,Option,hasLongOpt,"()",1
+org.apache.commons.cli,Option,hasNoValues,"()",1
+org.apache.commons.cli,Option,hasOptionalArg,"()",1
+org.apache.commons.cli,Option,hasValueSeparator,"()",1
+org.apache.commons.cli,Option,isDeprecated,"()",1
+org.apache.commons.cli,Option,isRequired,"()",1
+org.apache.commons.cli,Option,processValue,"(String value)",1
+org.apache.commons.cli,Option,requiresArg,"()",1
+org.apache.commons.cli,Option,setArgName,"(String argName)",1
+org.apache.commons.cli,Option,setArgs,"(int num)",1
+org.apache.commons.cli,Option,setConverter,"(Converter<?,?> converter)",1
+org.apache.commons.cli,Option,setDescription,"(String description)",1
+org.apache.commons.cli,Option,setLongOpt,"(String longOpt)",1
+org.apache.commons.cli,Option,setOptionalArg,"(boolean optionalArg)",1
+org.apache.commons.cli,Option,setRequired,"(boolean required)",1
+org.apache.commons.cli,Option,setType,"(Class<?> type)",1
+org.apache.commons.cli,Option,setType,"(Object type)",1
+org.apache.commons.cli,Option,setValueSeparator,"(char valueSeparator)",1
+org.apache.commons.cli,Option,toDeprecatedString,"()",1
+org.apache.commons.cli,Option,toString,"()",1
+org.apache.commons.cli,Builder,toType,"(Class<?> type)",1
+org.apache.commons.cli,Builder,argName,"(String argName)",1
+org.apache.commons.cli,Builder,build,"()",1
+org.apache.commons.cli,Builder,converter,"(Converter<?,?> converter)",1
+org.apache.commons.cli,Builder,deprecated,"()",1
+org.apache.commons.cli,Builder,deprecated,"(DeprecatedAttributes deprecated)",1
+org.apache.commons.cli,Builder,desc,"(String description)",1
+org.apache.commons.cli,Builder,hasArg,"()",1
+org.apache.commons.cli,Builder,hasArg,"(boolean hasArg)",1
+org.apache.commons.cli,Builder,hasArgs,"()",1
+org.apache.commons.cli,Builder,longOpt,"(String longOption)",1
+org.apache.commons.cli,Builder,numberOfArgs,"(int argCount)",1
+org.apache.commons.cli,Builder,option,"(String option)",1
+org.apache.commons.cli,Builder,optionalArg,"(boolean optionalArg)",1
+org.apache.commons.cli,Builder,required,"()",1
+org.apache.commons.cli,Builder,required,"(boolean required)",1
+org.apache.commons.cli,Builder,since,"(String since)",1
+org.apache.commons.cli,Builder,type,"(Class<?> type)",1
+org.apache.commons.cli,Builder,valueSeparator,"()",1
+org.apache.commons.cli,Builder,valueSeparator,"(char valueSeparator)",1
+org.apache.commons.cli,OptionBuilder,create,"()",1
+org.apache.commons.cli,OptionBuilder,create,"(char opt)",1
+org.apache.commons.cli,OptionBuilder,hasArg,"()",1
+org.apache.commons.cli,OptionBuilder,hasArg,"(boolean hasArg)",1
+org.apache.commons.cli,OptionBuilder,hasArgs,"()",1
+org.apache.commons.cli,OptionBuilder,hasArgs,"(int num)",1
+org.apache.commons.cli,OptionBuilder,hasOptionalArg,"()",1
+org.apache.commons.cli,OptionBuilder,hasOptionalArgs,"()",1
+org.apache.commons.cli,OptionBuilder,hasOptionalArgs,"(int numArgs)",1
+org.apache.commons.cli,OptionBuilder,isRequired,"()",1
+org.apache.commons.cli,OptionBuilder,isRequired,"(boolean newRequired)",1
+org.apache.commons.cli,OptionBuilder,reset,"()",1
+org.apache.commons.cli,OptionBuilder,withArgName,"(String name)",1
+org.apache.commons.cli,OptionBuilder,withDescription,"(String newDescription)",1
+org.apache.commons.cli,OptionBuilder,withLongOpt,"(String newLongopt)",1
+org.apache.commons.cli,OptionBuilder,withType,"(Class<?> newType)",1
+org.apache.commons.cli,OptionBuilder,withType,"(Object newType)",1
+org.apache.commons.cli,OptionBuilder,withValueSeparator,"()",1
+org.apache.commons.cli,OptionBuilder,withValueSeparator,"(char sep)",1
+org.apache.commons.cli,OptionGroup,addOption,"(Option option)",1
+org.apache.commons.cli,OptionGroup,getNames,"()",1
+org.apache.commons.cli,OptionGroup,getOptions,"()",1
+org.apache.commons.cli,OptionGroup,getSelected,"()",1
+org.apache.commons.cli,OptionGroup,isRequired,"()",1
+org.apache.commons.cli,OptionGroup,isSelected,"()",1
+org.apache.commons.cli,OptionGroup,setRequired,"(boolean required)",1
+org.apache.commons.cli,OptionGroup,setSelected,"(Option option)",1
+org.apache.commons.cli,OptionValidator,isValidChar,"(char c)",1
+org.apache.commons.cli,OptionValidator,isValidOpt,"(char c)",1
+org.apache.commons.cli,OptionValidator,validate,"(String option)",1
+org.apache.commons.cli,Options,addOption,"(Option opt)",1
+org.apache.commons.cli,Options,addOption,"(String opt, boolean hasArg, String description)",1
+org.apache.commons.cli,Options,addOption,"(String opt, String description)",1
+org.apache.commons.cli,Options,addOption,"(String opt, String longOpt, boolean hasArg, String description)",1
+org.apache.commons.cli,Options,addRequiredOption,"(String opt, String longOpt, boolean hasArg, String description)",1
+org.apache.commons.cli,Options,getOption,"(String opt)",1
+org.apache.commons.cli,Options,getOptionGroup,"(Option opt)",1
+org.apache.commons.cli,Options,getOptionGroups,"()",1
+org.apache.commons.cli,Options,getOptions,"()",1
+org.apache.commons.cli,Options,getRequiredOptions,"()",1
+org.apache.commons.cli,Options,hasLongOption,"(String opt)",1
+org.apache.commons.cli,Options,hasOption,"(String opt)",1
+org.apache.commons.cli,Options,hasShortOption,"(String opt)",1
+org.apache.commons.cli,Options,helpOptions,"()",1
+org.apache.commons.cli,Options,toString,"()",1
+org.apache.commons.cli,ParseException,wrap,"(Throwable e)",1
+org.apache.commons.cli,Parser,checkRequiredOptions,"()",1
+org.apache.commons.cli,Parser,getOptions,"()",1
+org.apache.commons.cli,Parser,getRequiredOptions,"()",1
+org.apache.commons.cli,Parser,parse,"(Options options, String[] arguments)",1
+org.apache.commons.cli,Parser,parse,"(Options options, String[] arguments, boolean stopAtNonOption)",1
+org.apache.commons.cli,Parser,parse,"(Options options, String[] arguments, Properties properties)",1
+org.apache.commons.cli,Parser,processOption,"(String arg, ListIterator<String> iter)",1
+org.apache.commons.cli,Parser,setOptions,"(Options options)",1
+org.apache.commons.cli,Parser,updateRequiredOptions,"(Option opt)",1
+org.apache.commons.cli,PatternOptionBuilder,getValueClass,"(char ch)",1
+org.apache.commons.cli,PatternOptionBuilder,isValueCode,"(char ch)",1
+org.apache.commons.cli,PatternOptionBuilder,unsupported,"()",1
+org.apache.commons.cli,PosixParser,gobble,"(Iterator<String> iter)",1
+org.apache.commons.cli,PosixParser,init,"()",1
+org.apache.commons.cli,PosixParser,processNonOptionToken,"(String value, boolean stopAtNonOption)",1
+org.apache.commons.cli,PosixParser,processOptionToken,"(String token, boolean stopAtNonOption)",1
+org.apache.commons.cli,TypeHandler,createClass,"(String className)",1
+org.apache.commons.cli,TypeHandler,createDate,"(String string)",1
+org.apache.commons.cli,TypeHandler,createDefaultMap,"()",1
+org.apache.commons.cli,TypeHandler,createFile,"(String string)",1
+org.apache.commons.cli,TypeHandler,createFiles,"(String string)",1
+org.apache.commons.cli,TypeHandler,createNumber,"(String string)",1
+org.apache.commons.cli,TypeHandler,createObject,"(String className)",1
+org.apache.commons.cli,TypeHandler,createURL,"(String string)",1
+org.apache.commons.cli,TypeHandler,createValue,"(String string, Object obj)",1
+org.apache.commons.cli,TypeHandler,getDefault,"()",1
+org.apache.commons.cli,TypeHandler,openFile,"(String string)",1
+org.apache.commons.cli,TypeHandler,putDefaultMap,"(Map<Class<?>,Converter<?,? extends Throwable>> map)",1
+org.apache.commons.cli,TypeHandler,getConverter,"(Class<T> clazz)",1
+org.apache.commons.cli,UnrecognizedOptionException,getOption,"()",1
+org.apache.commons.cli,Util,isEmpty,"(Object[] array)",1
+org.apache.commons.cli,Util,isEmpty,"(String str)",1
+org.apache.commons.cli,Util,stripLeadingAndTrailingQuotes,"(String str)",1
+org.apache.commons.cli,Util,stripLeadingHyphens,"(String str)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getComparator,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getHelpAppendable,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getOptionFormatBuilder,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getOptionFormatter,"(Option option)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getOptionGroupSeparator,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getSerializer,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,getSyntaxPrefix,"()",1
+org.apache.commons.cli.help,AbstractHelpFormatter,printHelp,"(String cmdLineSyntax, String header, Iterable<Option> options, String footer, boolean autoUsage)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,printHelp,"(String cmdLineSyntax, String header, Options options, String footer, boolean autoUsage)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,printOptions,"(Iterable<Option> options)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,printOptions,"(Options options)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,printOptions,"(TableDefinition tableDefinition)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,setSyntaxPrefix,"(String prefix)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,sort,"(Iterable<Option> options)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,sort,"(Options options)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,toArgName,"(String argName)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,toSyntaxOptions,"(Iterable<Option> options)",1
+org.apache.commons.cli.help,AbstractHelpFormatter,toSyntaxOptions,"(Options options)",1
+org.apache.commons.cli.help,Builder,asThis,"()",1
+org.apache.commons.cli.help,Builder,getComparator,"()",1
+org.apache.commons.cli.help,Builder,getHelpAppendable,"()",1
+org.apache.commons.cli.help,Builder,getOptionFormatBuilder,"()",1
+org.apache.commons.cli.help,Builder,getOptionGroupSeparator,"()",1
+org.apache.commons.cli.help,Builder,setComparator,"(Comparator<Option> comparator)",1
+org.apache.commons.cli.help,Builder,setHelpAppendable,"(HelpAppendable helpAppendable)",1
+org.apache.commons.cli.help,Builder,setOptionFormatBuilder,"(OptionFormatter.Builder optionFormatBuilder)",1
+org.apache.commons.cli.help,Builder,setOptionGroupSeparator,"(String optionGroupSeparator)",1
+org.apache.commons.cli.help,FilterHelpAppendable,append,"(char ch)",1
+org.apache.commons.cli.help,FilterHelpAppendable,append,"(CharSequence text)",1
+org.apache.commons.cli.help,FilterHelpAppendable,append,"(CharSequence csq, int start, int end)",1
+org.apache.commons.cli.help,HelpFormatter,builder,"()",1
+org.apache.commons.cli.help,Builder,get,"()",1
+org.apache.commons.cli.help,Builder,setShowSince,"(boolean showSince)",1
+org.apache.commons.cli.help,OptionFormatter,builder,"()",1
+org.apache.commons.cli.help,OptionFormatter,from,"(Option option)",1
+org.apache.commons.cli.help,OptionFormatter,getArgName,"()",1
+org.apache.commons.cli.help,OptionFormatter,getBothOpt,"()",1
+org.apache.commons.cli.help,OptionFormatter,getDescription,"()",1
+org.apache.commons.cli.help,OptionFormatter,getLongOpt,"()",1
+org.apache.commons.cli.help,OptionFormatter,getOpt,"()",1
+org.apache.commons.cli.help,OptionFormatter,getSince,"()",1
+org.apache.commons.cli.help,OptionFormatter,isRequired,"()",1
+org.apache.commons.cli.help,OptionFormatter,toOptional,"(String text)",1
+org.apache.commons.cli.help,OptionFormatter,toSyntaxOption,"()",1
+org.apache.commons.cli.help,OptionFormatter,toSyntaxOption,"(boolean isRequired)",1
+org.apache.commons.cli.help,Builder,build,"(Option option)",1
+org.apache.commons.cli.help,Builder,get,"()",1
+org.apache.commons.cli.help,Builder,setArgumentNameDelimiters,"(String begin, String end)",1
+org.apache.commons.cli.help,Builder,setDefaultArgName,"(String name)",1
+org.apache.commons.cli.help,Builder,setDeprecatedFormatFunction,"(Function<Option,String> deprecatedFormatFunction)",1
+org.apache.commons.cli.help,Builder,setLongOptPrefix,"(String prefix)",1
+org.apache.commons.cli.help,Builder,setOptArgSeparator,"(String optArgSeparator)",1
+org.apache.commons.cli.help,Builder,setOptionalDelimiters,"(String begin, String end)",1
+org.apache.commons.cli.help,Builder,setOptPrefix,"(String optPrefix)",1
+org.apache.commons.cli.help,Builder,setOptSeparator,"(String optSeparator)",1
+org.apache.commons.cli.help,Builder,setSyntaxFormatFunction,"(BiFunction<OptionFormatter,Boolean,String> syntaxFormatFunction)",1
+org.apache.commons.cli.help,Builder,toArgName,"(String argName)",1
+org.apache.commons.cli.help,TextHelpAppendable,systemOut,"()",1
+org.apache.commons.cli.help,TextHelpAppendable,appendHeader,"(int level, CharSequence text)",1
+org.apache.commons.cli.help,TextHelpAppendable,appendList,"(boolean ordered, Collection<CharSequence> list)",1
+org.apache.commons.cli.help,TextHelpAppendable,appendParagraph,"(CharSequence paragraph)",1
+org.apache.commons.cli.help,TextHelpAppendable,appendTitle,"(CharSequence title)",1
+org.apache.commons.cli.help,TextHelpAppendable,getIndent,"()",1
+org.apache.commons.cli.help,TextHelpAppendable,getLeftPad,"()",1
+org.apache.commons.cli.help,TextHelpAppendable,getMaxWidth,"()",1
+org.apache.commons.cli.help,TextHelpAppendable,getTextStyleBuilder,"()",1
+org.apache.commons.cli.help,TextHelpAppendable,printWrapped,"(String text)",1
+org.apache.commons.cli.help,TextHelpAppendable,printWrapped,"(String text, TextStyle style)",1
+org.apache.commons.cli.help,TextHelpAppendable,resize,"(int orig, double fraction)",1
+org.apache.commons.cli.help,TextHelpAppendable,resize,"(TextStyle.Builder builder, double fraction)",1
+org.apache.commons.cli.help,TextHelpAppendable,setIndent,"(int indent)",1
+org.apache.commons.cli.help,TextHelpAppendable,setLeftPad,"(int leftPad)",1
+org.apache.commons.cli.help,TextHelpAppendable,setMaxWidth,"(int maxWidth)",1
+org.apache.commons.cli.help,TextStyle,builder,"()",1
+org.apache.commons.cli.help,TextStyle,getAlignment,"()",1
+org.apache.commons.cli.help,TextStyle,getIndent,"()",1
+org.apache.commons.cli.help,TextStyle,getLeftPad,"()",1
+org.apache.commons.cli.help,TextStyle,getMaxWidth,"()",1
+org.apache.commons.cli.help,TextStyle,getMinWidth,"()",1
+org.apache.commons.cli.help,TextStyle,isScalable,"()",1
+org.apache.commons.cli.help,TextStyle,toString,"()",1
+org.apache.commons.cli.help,Builder,get,"()",1
+org.apache.commons.cli.help,Builder,getIndent,"()",1
+org.apache.commons.cli.help,Builder,getLeftPad,"()",1
+org.apache.commons.cli.help,Builder,getMaxWidth,"()",1
+org.apache.commons.cli.help,Builder,getMinWidth,"()",1
+org.apache.commons.cli.help,Builder,isScalable,"()",1
+org.apache.commons.cli.help,Builder,setAlignment,"(Alignment alignment)",1
+org.apache.commons.cli.help,Builder,setIndent,"(int indent)",1
+org.apache.commons.cli.help,Builder,setLeftPad,"(int leftPad)",1
+org.apache.commons.cli.help,Builder,setMaxWidth,"(int maxWidth)",1
+org.apache.commons.cli.help,Builder,setMinWidth,"(int minWidth)",1
+org.apache.commons.cli.help,Builder,setScalable,"(boolean scalable)",1
+org.apache.commons.cli.help,Builder,setTextStyle,"(TextStyle style)",1
+org.apache.commons.cli.help,Util,defaultValue,"(T str, T defaultValue)",1
+org.apache.commons.cli.help,Util,isEmpty,"(CharSequence str)",1
+org.apache.commons.cli.help,Util,isWhitespace,"(char c)",1
+org.apache.commons.cli.help,Util,ltrim,"(String s)",1
+org.apache.commons.cli.help,Util,repeat,"(int len, char fillChar)",1
+org.apache.commons.cli.help,Util,repeatSpace,"(int len)",1
+org.apache.commons.cli,AbstractParserTestCase,parse,"(CommandLineParser parser, Options options, String[] args, Properties properties)",1
+org.apache.commons.cli,AbstractParserTestCase,setUp,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousArgParsing,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousLongWithoutEqualSingleDash2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousPartialLongOption1,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousPartialLongOption2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousPartialLongOption3,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testAmbiguousPartialLongOption4,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testArgumentStartingWithHyphen,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testBursting,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testDoubleDash1,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testDoubleDash2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongOptionQuoteHandling,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongOptionWithEqualsQuoteHandling,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithEqualDoubleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithEqualSingleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithoutEqualDoubleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithUnexpectedArgument1,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testLongWithUnexpectedArgument2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMissingArg,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMissingArgWithBursting,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMissingRequiredGroup,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMissingRequiredOption,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMissingRequiredOptions,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMultiple,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMultipleWithLong,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testMultipleWithNull,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testNegativeArgument,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testNegativeOption,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testOptionalArgsOptionBuilder,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testOptionalArgsOptionDotBuilder,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testOptionAndRequiredOption,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testOptionGroup,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testOptionGroupLong,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPartialLongOptionSingleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertiesOption1,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertiesOption2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionFlags,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionGroup,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionMultipleValues,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionRequired,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionSingularValue,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOptionUnexpected,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testPropertyOverrideValues,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testReuseOptionsTwice,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testShortOptionConcatenatedQuoteHandling,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testShortOptionQuoteHandling,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testShortWithEqual,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testShortWithoutEqual,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testShortWithUnexpectedArgument,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testSimpleLong,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testSimpleShort,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testSingleDash,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopAtExpectedArg,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopAtNonOptionLong,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopAtNonOptionShort,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopAtUnexpectedArg,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopBursting,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testStopBursting2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnambiguousPartialLongOption1,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnambiguousPartialLongOption2,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnambiguousPartialLongOption3,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnambiguousPartialLongOption4,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnlimitedArgs,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnrecognizedOption,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testUnrecognizedOptionWithBursting,"()",1
+org.apache.commons.cli,AbstractParserTestCase,testWithRequiredOption,"()",1
+org.apache.commons.cli,AlreadySelectedExceptionTest,testConstructor,"()",1
+org.apache.commons.cli,ApplicationTest,testAnt,"()",1
+org.apache.commons.cli,ApplicationTest,testGroovy,"()",1
+org.apache.commons.cli,ApplicationTest,testLs,"()",1
+org.apache.commons.cli,ApplicationTest,testMan,"()",1
+org.apache.commons.cli,ApplicationTest,testNLT,"()",1
+org.apache.commons.cli,ArgumentIsOptionTest,setUp,"()",1
+org.apache.commons.cli,ArgumentIsOptionTest,testOption,"()",1
+org.apache.commons.cli,ArgumentIsOptionTest,testOptionAndOptionWithArgument,"()",1
+org.apache.commons.cli,ArgumentIsOptionTest,testOptionWithArgument,"()",1
+org.apache.commons.cli,BasicParserTest,setUp,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousLongWithoutEqualSingleDash2,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousPartialLongOption1,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousPartialLongOption2,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousPartialLongOption3,"()",1
+org.apache.commons.cli,BasicParserTest,testAmbiguousPartialLongOption4,"()",1
+org.apache.commons.cli,BasicParserTest,testBursting,"()",1
+org.apache.commons.cli,BasicParserTest,testDoubleDash2,"()",1
+org.apache.commons.cli,BasicParserTest,testLongOptionWithEqualsQuoteHandling,"()",1
+org.apache.commons.cli,BasicParserTest,testLongWithEqualDoubleDash,"()",1
+org.apache.commons.cli,BasicParserTest,testLongWithEqualSingleDash,"()",1
+org.apache.commons.cli,BasicParserTest,testLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,BasicParserTest,testMissingArgWithBursting,"()",1
+org.apache.commons.cli,BasicParserTest,testNegativeOption,"()",1
+org.apache.commons.cli,BasicParserTest,testPartialLongOptionSingleDash,"()",1
+org.apache.commons.cli,BasicParserTest,testPropertiesOption1,"()",1
+org.apache.commons.cli,BasicParserTest,testPropertiesOption2,"()",1
+org.apache.commons.cli,BasicParserTest,testShortOptionConcatenatedQuoteHandling,"()",1
+org.apache.commons.cli,BasicParserTest,testShortWithEqual,"()",1
+org.apache.commons.cli,BasicParserTest,testShortWithoutEqual,"()",1
+org.apache.commons.cli,BasicParserTest,testStopBursting,"()",1
+org.apache.commons.cli,BasicParserTest,testStopBursting2,"()",1
+org.apache.commons.cli,BasicParserTest,testUnambiguousPartialLongOption1,"()",1
+org.apache.commons.cli,BasicParserTest,testUnambiguousPartialLongOption2,"()",1
+org.apache.commons.cli,BasicParserTest,testUnambiguousPartialLongOption3,"()",1
+org.apache.commons.cli,BasicParserTest,testUnambiguousPartialLongOption4,"()",1
+org.apache.commons.cli,BasicParserTest,testUnrecognizedOptionWithBursting,"()",1
+org.apache.commons.cli,CommandLineTest,createHasOptionParameters,"()",1
+org.apache.commons.cli,CommandLineTest,createOptionValueParameters,"()",1
+org.apache.commons.cli,CommandLineTest,createOptionValuesParameters,"()",1
+org.apache.commons.cli,CommandLineTest,createParsedOptionValueParameters,"()",1
+org.apache.commons.cli,CommandLineTest,asChar,"(Option opt)",1
+org.apache.commons.cli,CommandLineTest,assertWritten,"(boolean optDep, ByteArrayOutputStream baos)",1
+org.apache.commons.cli,CommandLineTest,checkHandler,"(boolean optDep, List<Option> handler, Option opt)",1
+org.apache.commons.cli,CommandLineTest,testBadGetParsedOptionValue,"()",1
+org.apache.commons.cli,CommandLineTest,testBuilderBuild,"()",1
+org.apache.commons.cli,CommandLineTest,testBuilderGet,"()",1
+org.apache.commons.cli,CommandLineTest,testBuilderNullArgs,"()",1
+org.apache.commons.cli,CommandLineTest,testBuilderNullOption,"()",1
+org.apache.commons.cli,CommandLineTest,testGetOptionProperties,"()",1
+org.apache.commons.cli,CommandLineTest,testGetOptionPropertiesWithOption,"()",1
+org.apache.commons.cli,CommandLineTest,testGetOptionsBuilder,"()",1
+org.apache.commons.cli,CommandLineTest,testGetOptionsCtor,"()",1
+org.apache.commons.cli,CommandLineTest,testGetOptionValue,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, String optValue, boolean grpDep, String grpValue, Option grpOpt)",1
+org.apache.commons.cli,CommandLineTest,testGetOptionValues,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, String[] optValue, boolean grpDep, String[] grpValue, Option grpOpt)",1
+org.apache.commons.cli,CommandLineTest,testGetParsedOptionValue,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, Integer optValue, boolean grpDep, Integer grpValue, Option grpOpt)",1
+org.apache.commons.cli,CommandLineTest,testHasOption,"(String[] args, Option opt, OptionGroup optionGroup, boolean optDep, boolean has, boolean grpDep, boolean hasGrp, Option grpOpt)",1
+org.apache.commons.cli,CommandLineTest,testNullOption,"()",1
+org.apache.commons.cli,ConverterTests,numberTestParameters,"()",1
+org.apache.commons.cli,ConverterTests,testClass,"()",1
+org.apache.commons.cli,ConverterTests,testDate,"()",1
+org.apache.commons.cli,ConverterTests,testFile,"()",1
+org.apache.commons.cli,ConverterTests,testNumber,"(String str, Number expected)",1
+org.apache.commons.cli,ConverterTests,testObject,"()",1
+org.apache.commons.cli,ConverterTests,testUrl,"()",1
+org.apache.commons.cli,DefaultParserTest,setUp,"()",1
+org.apache.commons.cli,DefaultParserTest,testBuilder,"()",1
+org.apache.commons.cli,DefaultParserTest,testDeprecated,"()",1
+org.apache.commons.cli,DefaultParserTest,testLongOptionWithEqualsQuoteHandling,"()",1
+org.apache.commons.cli,DefaultParserTest,testParameterized,"(String testName, CommandLineParser parser, String[] args, String expected, String option, String message)",1
+org.apache.commons.cli,DefaultParserTest,testShortOptionConcatenatedQuoteHandling,"()",1
+org.apache.commons.cli,ExternalArgumentsProvider,provideArguments,"(ExtensionContext context)",1
+org.apache.commons.cli,DeprecatedAttributesTest,testBuilderNonDefaults,"()",1
+org.apache.commons.cli,DeprecatedAttributesTest,testBuilderNonDefaultsToString,"()",1
+org.apache.commons.cli,DeprecatedAttributesTest,testDefaultBuilder,"()",1
+org.apache.commons.cli,DeprecatedAttributesTest,testDefaultToString,"()",1
+org.apache.commons.cli,DisablePartialMatchingTest,testDisablePartialMatching,"()",1
+org.apache.commons.cli,DisablePartialMatchingTest,testRegularPartialMatching,"()",1
+org.apache.commons.cli,GnuParserTest,setUp,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousLongWithoutEqualSingleDash2,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousPartialLongOption1,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousPartialLongOption2,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousPartialLongOption3,"()",1
+org.apache.commons.cli,GnuParserTest,testAmbiguousPartialLongOption4,"()",1
+org.apache.commons.cli,GnuParserTest,testBursting,"()",1
+org.apache.commons.cli,GnuParserTest,testDoubleDash2,"()",1
+org.apache.commons.cli,GnuParserTest,testLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,GnuParserTest,testLongWithUnexpectedArgument1,"()",1
+org.apache.commons.cli,GnuParserTest,testLongWithUnexpectedArgument2,"()",1
+org.apache.commons.cli,GnuParserTest,testMissingArgWithBursting,"()",1
+org.apache.commons.cli,GnuParserTest,testNegativeOption,"()",1
+org.apache.commons.cli,GnuParserTest,testPartialLongOptionSingleDash,"()",1
+org.apache.commons.cli,GnuParserTest,testShortWithUnexpectedArgument,"()",1
+org.apache.commons.cli,GnuParserTest,testStopBursting,"()",1
+org.apache.commons.cli,GnuParserTest,testStopBursting2,"()",1
+org.apache.commons.cli,GnuParserTest,testUnambiguousPartialLongOption1,"()",1
+org.apache.commons.cli,GnuParserTest,testUnambiguousPartialLongOption2,"()",1
+org.apache.commons.cli,GnuParserTest,testUnambiguousPartialLongOption3,"()",1
+org.apache.commons.cli,GnuParserTest,testUnambiguousPartialLongOption4,"()",1
+org.apache.commons.cli,GnuParserTest,testUnrecognizedOptionWithBursting,"()",1
+org.apache.commons.cli,HelpFormatterTest,deprecatedOptionsProvider,"()",1
+org.apache.commons.cli,HelpFormatterTest,testAccessors,"()",1
+org.apache.commons.cli,HelpFormatterTest,testAutomaticUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testDefaultArgName,"()",1
+org.apache.commons.cli,HelpFormatterTest,testFindWrapPos,"()",1
+org.apache.commons.cli,HelpFormatterTest,testHeaderStartingWithLineSeparator0,"()",1
+org.apache.commons.cli,HelpFormatterTest,testHeaderStartingWithLineSeparator1,"()",1
+org.apache.commons.cli,HelpFormatterTest,testHelpWithLongOptSeparator,"()",1
+org.apache.commons.cli,HelpFormatterTest,testIndentedHeaderAndFooter,"()",1
+org.apache.commons.cli,HelpFormatterTest,testOptionWithoutShortFormat,"()",1
+org.apache.commons.cli,HelpFormatterTest,testOptionWithoutShortFormat2,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintDeprecatedOptions,"(HelpFormatter hf, Option option, String expectedTxt)",1
+org.apache.commons.cli,HelpFormatterTest,testPrintHelpNewlineFooter,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintHelpNewlineHeader,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintHelpWithEmptySyntax,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintHelpWithSince,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintOptionGroupUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintOptions,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintOptionWithEmptyArgNameUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintRequiredOptionGroupUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintSortedUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintSortedUsageWithNullComparator,"()",1
+org.apache.commons.cli,HelpFormatterTest,testPrintUsage,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderSince,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextMultiLine,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextMultiLinePadded,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextSingleLine,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextSingleLinePadded,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextSingleLinePadded2,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRenderWrappedTextWordCut,"()",1
+org.apache.commons.cli,HelpFormatterTest,testRtrim,"()",1
+org.apache.commons.cli,HelpFormatterTest,testUsageWithLongOptSeparator,"()",1
+org.apache.commons.cli,OptionBuilderTest,testBaseOptionCharOpt,"()",1
+org.apache.commons.cli,OptionBuilderTest,testBaseOptionStringOpt,"()",1
+org.apache.commons.cli,OptionBuilderTest,testBuilderIsResettedAlways,"()",1
+org.apache.commons.cli,OptionBuilderTest,testCompleteOption,"()",1
+org.apache.commons.cli,OptionBuilderTest,testCreateIncompleteOption,"()",1
+org.apache.commons.cli,OptionBuilderTest,testIllegalOptions,"()",1
+org.apache.commons.cli,OptionBuilderTest,testOptionArgNumbers,"()",1
+org.apache.commons.cli,OptionBuilderTest,testSpecialOptChars,"()",1
+org.apache.commons.cli,OptionBuilderTest,testTwoCompleteOptions,"()",1
+org.apache.commons.cli,OptionGroupTest,setUp,"()",1
+org.apache.commons.cli,OptionGroupTest,testGetNames,"()",1
+org.apache.commons.cli,OptionGroupTest,testNoOptionsExtraArgs,"()",1
+org.apache.commons.cli,OptionGroupTest,testSingleLongOption,"()",1
+org.apache.commons.cli,OptionGroupTest,testSingleOption,"()",1
+org.apache.commons.cli,OptionGroupTest,testSingleOptionFromGroup,"()",1
+org.apache.commons.cli,OptionGroupTest,testToString,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoLongOptionsFromGroup,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoOptionsFromDifferentGroup,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoOptionsFromGroup,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoOptionsFromGroupWithProperties,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoValidLongOptions,"()",1
+org.apache.commons.cli,OptionGroupTest,testTwoValidOptions,"()",1
+org.apache.commons.cli,OptionGroupTest,testValidLongOnlyOptions,"()",1
+org.apache.commons.cli,OptionTest,checkOption,"(Option option, String opt, String description, String longOpt, int numArgs, String argName, boolean required, boolean optionalArg, char valueSeparator, Class<?> cls, String deprecatedDesc, Boolean deprecatedForRemoval, String deprecatedSince)",1
+org.apache.commons.cli,OptionTest,roundTrip,"(Option o)",1
+org.apache.commons.cli,OptionTest,testAddValue,"()",1
+org.apache.commons.cli,OptionTest,testBuilderEmpty,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInsufficientParams1,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInsufficientParams2,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInvalidOptionName0,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInvalidOptionName1,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInvalidOptionName2,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInvalidOptionName3,"()",1
+org.apache.commons.cli,OptionTest,testBuilderInvalidOptionName4,"()",1
+org.apache.commons.cli,OptionTest,testBuilderMethods,"()",1
+org.apache.commons.cli,OptionTest,testClear,"()",1
+org.apache.commons.cli,OptionTest,testClone,"()",1
+org.apache.commons.cli,OptionTest,testEquals,"()",1
+org.apache.commons.cli,OptionTest,testGetValue,"()",1
+org.apache.commons.cli,OptionTest,testHasArgName,"()",1
+org.apache.commons.cli,OptionTest,testHasArgs,"()",1
+org.apache.commons.cli,OptionTest,testHashCode,"()",1
+org.apache.commons.cli,OptionTest,testSerialization,"()",1
+org.apache.commons.cli,OptionTest,testSubclass,"()",1
+org.apache.commons.cli,OptionTest,testTypeClass,"()",1
+org.apache.commons.cli,OptionTest,testTypeObject,"()",1
+org.apache.commons.cli,DefaultOption,getValue,"()",1
+org.apache.commons.cli,TestOption,addValue,"(String value)",1
+org.apache.commons.cli,OptionValidatorTest,testValidate,"(String str, boolean expected, String name)",1
+org.apache.commons.cli,OptionsTest,assertToStrings,"(Option option)",1
+org.apache.commons.cli,OptionsTest,testAddConflictingOptions,"()",1
+org.apache.commons.cli,OptionsTest,testAddNonConflictingOptions,"()",1
+org.apache.commons.cli,OptionsTest,testAddOptions,"()",1
+org.apache.commons.cli,OptionsTest,testAddOptions2X,"()",1
+org.apache.commons.cli,OptionsTest,testDeprecated,"()",1
+org.apache.commons.cli,OptionsTest,testDuplicateLong,"()",1
+org.apache.commons.cli,OptionsTest,testDuplicateSimple,"()",1
+org.apache.commons.cli,OptionsTest,testGetMatchingOpts,"()",1
+org.apache.commons.cli,OptionsTest,testGetOptionsGroups,"()",1
+org.apache.commons.cli,OptionsTest,testHelpOptions,"()",1
+org.apache.commons.cli,OptionsTest,testLong,"()",1
+org.apache.commons.cli,OptionsTest,testMissingOptionException,"()",1
+org.apache.commons.cli,OptionsTest,testMissingOptionsException,"()",1
+org.apache.commons.cli,OptionsTest,testSimple,"()",1
+org.apache.commons.cli,OptionsTest,testToString,"()",1
+org.apache.commons.cli,ParseExceptionTest,testConstructor,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testClassPattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testEmptyPattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testExistingFilePattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testExistingFilePatternFileNotExist,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testNumberPattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testObjectPattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testRequiredOption,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testSimplePattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testUntypedPattern,"()",1
+org.apache.commons.cli,PatternOptionBuilderTest,testURLPattern,"()",1
+org.apache.commons.cli,PosixParserTest,setUp,"()",1
+org.apache.commons.cli,PosixParserTest,testAmbiguousLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,PosixParserTest,testAmbiguousLongWithoutEqualSingleDash2,"()",1
+org.apache.commons.cli,PosixParserTest,testAmbiguousPartialLongOption4,"()",1
+org.apache.commons.cli,PosixParserTest,testDoubleDash2,"()",1
+org.apache.commons.cli,PosixParserTest,testLongWithEqualSingleDash,"()",1
+org.apache.commons.cli,PosixParserTest,testLongWithoutEqualSingleDash,"()",1
+org.apache.commons.cli,PosixParserTest,testLongWithUnexpectedArgument1,"()",1
+org.apache.commons.cli,PosixParserTest,testNegativeOption,"()",1
+org.apache.commons.cli,PosixParserTest,testShortWithEqual,"()",1
+org.apache.commons.cli,PosixParserTest,testUnambiguousPartialLongOption4,"()",1
+org.apache.commons.cli,SolrCliTest,getDefaultSolrUrl,"()",1
+org.apache.commons.cli,SolrCliTest,testOptions,"()",1
+org.apache.commons.cli,SolrCreateToolTest,getOptions,"()",1
+org.apache.commons.cli,SolrCreateToolTest,printHelp,"(HelpFormatter formatter)",1
+org.apache.commons.cli,SolrCreateToolTest,testHelpFormatter,"()",1
+org.apache.commons.cli,SolrCreateToolTest,testHelpFormatterDeprecated,"()",1
+org.apache.commons.cli,TypeHandlerTest,createDateFixtures,"()",1
+org.apache.commons.cli,TypeHandlerTest,createValueTestParameters,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateClass,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateDate,"(Date date)",1
+org.apache.commons.cli,TypeHandlerTest,testCreateFile,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateFiles,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateNumber,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateObject,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateURL,"()",1
+org.apache.commons.cli,TypeHandlerTest,testCreateValue,"(String str, Class<?> type, Object expected)",1
+org.apache.commons.cli,TypeHandlerTest,testCreateValueExistingFile,"()",1
+org.apache.commons.cli,TypeHandlerTest,testnstantiableEquals,"()",1
+org.apache.commons.cli,TypeHandlerTest,testOpenFile,"()",1
+org.apache.commons.cli,Instantiable,equals,"(Object arg0)",1
+org.apache.commons.cli,Instantiable,hashCode,"()",1
+org.apache.commons.cli,UnrecognizedOptionExceptionTest,testConstructor,"()",1
+org.apache.commons.cli,UtilTest,testStripLeadingAndTrailingQuotes,"()",1
+org.apache.commons.cli,UtilTest,testStripLeadingHyphens,"()",1
+org.apache.commons.cli,ValueTest,parsers,"()",1
+org.apache.commons.cli,ValueTest,setUp,"()",1
+org.apache.commons.cli,ValueTest,testLongNoArg,"()",1
+org.apache.commons.cli,ValueTest,testLongNoArgWithOption,"()",1
+org.apache.commons.cli,ValueTest,testLongOptionalArgValue,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalArgValues,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalArgValuesWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalArgValueWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalNArgValues,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalNArgValuesWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalNoValue,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongOptionalNoValueWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testLongWithArg,"()",1
+org.apache.commons.cli,ValueTest,testLongWithArgWithOption,"()",1
+org.apache.commons.cli,ValueTest,testShortNoArg,"()",1
+org.apache.commons.cli,ValueTest,testShortNoArgWithOption,"()",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgNoValue,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgNoValueWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgValue,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgValues,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgValuesWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalArgValueWithOption,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalNArgValues,"(CommandLineParser parser)",1
+org.apache.commons.cli,ValueTest,testShortOptionalNArgValuesSeparated,"()",1
+org.apache.commons.cli,ValueTest,testShortOptionalNArgValuesWithOption,"()",1
+org.apache.commons.cli,ValueTest,testShortWithArg,"()",1
+org.apache.commons.cli,ValueTest,testShortWithArgWithOption,"()",1
+org.apache.commons.cli,ValuesTest,setUp,"()",1
+org.apache.commons.cli,ValuesTest,testCharSeparator,"()",1
+org.apache.commons.cli,ValuesTest,testComplexValues,"()",1
+org.apache.commons.cli,ValuesTest,testExtraArgs,"()",1
+org.apache.commons.cli,ValuesTest,testMultipleArgValues,"()",1
+org.apache.commons.cli,ValuesTest,testShortArgs,"()",1
+org.apache.commons.cli,ValuesTest,testShortArgsWithValue,"()",1
+org.apache.commons.cli,ValuesTest,testTwoArgValues,"()",1
+org.apache.commons.cli.bug,BugCLI133Test,testOrder,"()",1
+org.apache.commons.cli.bug,BugCLI13Test,testCLI13,"()",1
+org.apache.commons.cli.bug,BugCLI148Test,setUp,"()",1
+org.apache.commons.cli.bug,BugCLI148Test,testWorkaround1,"()",1
+org.apache.commons.cli.bug,BugCLI148Test,testWorkaround2,"()",1
+org.apache.commons.cli.bug,BugCLI162Test,setUp,"()",1
+org.apache.commons.cli.bug,BugCLI162Test,testInfiniteLoop,"()",1
+org.apache.commons.cli.bug,BugCLI162Test,testLongLineChunking,"()",1
+org.apache.commons.cli.bug,BugCLI162Test,testLongLineChunkingIndentIgnored,"()",1
+org.apache.commons.cli.bug,BugCLI162Test,testPrintHelpLongLines,"()",1
+org.apache.commons.cli.bug,BugCLI18Test,testCLI18,"()",1
+org.apache.commons.cli.bug,BugCLI252Test,getOptions,"()",1
+org.apache.commons.cli.bug,BugCLI252Test,testAmbiquousOptionName,"()",1
+org.apache.commons.cli.bug,BugCLI252Test,testExactOptionNameMatch,"()",1
+org.apache.commons.cli.bug,BugCLI265Test,setUp,"()",1
+org.apache.commons.cli.bug,BugCLI265Test,testShouldParseConcatenatedShortOptions,"()",1
+org.apache.commons.cli.bug,BugCLI265Test,testShouldParseShortOptionWithoutValue,"()",1
+org.apache.commons.cli.bug,BugCLI265Test,testShouldParseShortOptionWithValue,"()",1
+org.apache.commons.cli.bug,BugCLI266Test,buildOptionsGroup,"(Options options)",1
+org.apache.commons.cli.bug,BugCLI266Test,getOptions,"()",1
+org.apache.commons.cli.bug,BugCLI312Test,testNoOptionValues,"()",1
+org.apache.commons.cli.bug,BugCLI312Test,testPropertyStyleOption_withGetOptionProperties,"()",1
+org.apache.commons.cli.bug,BugCLI325Test,testCli325,"()",1
+org.apache.commons.cli.bug,BugCLI71Test,setUp,"()",1
+org.apache.commons.cli.bug,BugCLI71Test,testBasic,"()",1
+org.apache.commons.cli.bug,BugCLI71Test,testGetsDefaultIfOptional,"()",1
+org.apache.commons.cli.bug,BugCLI71Test,testLackOfError,"()",1
+org.apache.commons.cli.bug,BugCLI71Test,testMistakenArgument,"()",1
+org.apache.commons.cli.bug,BugsTest,test11456,"()",1
+org.apache.commons.cli.bug,BugsTest,test11457,"()",1
+org.apache.commons.cli.bug,BugsTest,test11680,"()",1
+org.apache.commons.cli.bug,BugsTest,test12210,"()",1
+org.apache.commons.cli.bug,BugsTest,test13425,"()",1
+org.apache.commons.cli.bug,BugsTest,test13666_Builder,"()",1
+org.apache.commons.cli.bug,BugsTest,test13935,"()",1
+org.apache.commons.cli.bug,BugsTest,test14786,"()",1
+org.apache.commons.cli.bug,BugsTest,test15046,"()",1
+org.apache.commons.cli.bug,BugsTest,test15648,"()",1
+org.apache.commons.cli.bug,BugsTest,test31148,"()",1
+org.apache.commons.cli.example,AptHelpAppendable,appendHeader,"(int level, CharSequence text)",1
+org.apache.commons.cli.example,AptHelpAppendable,appendList,"(boolean ordered, Collection<CharSequence> list)",1
+org.apache.commons.cli.example,AptHelpAppendable,appendParagraph,"(CharSequence paragraph)",1
+org.apache.commons.cli.example,AptHelpAppendable,appendTable,"(TableDefinition table)",1
+org.apache.commons.cli.example,AptHelpAppendable,appendTitle,"(CharSequence title)",1
+org.apache.commons.cli.example,AptHelpAppendableTest,beforeEach,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendFormatTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendHeaderTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendListTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendParagraphFormatTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendParagraphTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendTableTest,"()",1
+org.apache.commons.cli.example,AptHelpAppendableTest,testAppendTitleTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendable,appendHeader,"(int level, CharSequence text)",1
+org.apache.commons.cli.example,XhtmlHelpAppendable,appendList,"(boolean ordered, Collection<CharSequence> list)",1
+org.apache.commons.cli.example,XhtmlHelpAppendable,appendParagraph,"(CharSequence paragraph)",1
+org.apache.commons.cli.example,XhtmlHelpAppendable,appendTable,"(TableDefinition table)",1
+org.apache.commons.cli.example,XhtmlHelpAppendable,appendTitle,"(CharSequence title)",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,beforeEach,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendHeaderTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendListTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendParagraphFormatTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendParagraphTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendTableTest,"()",1
+org.apache.commons.cli.example,XhtmlHelpAppendableTest,testAppendTitleTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,getTestGroups,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testDefault,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testPrintHelp,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testPrintHelpXML,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testPrintOptions,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testSetOptionFormatBuilderTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testSetOptionGroupSeparatorTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testSortOptionGroupsTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testSortOptionsTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testSyntaxPrefix,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testToArgNameTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testToSyntaxOptionGroupTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testToSyntaxOptionIterableTest,"()",1
+org.apache.commons.cli.help,HelpFormatterTest,testToSyntaxOptionOptionsTest,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,deprecatedAttributesData,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,assertEquivalent,"(OptionFormatter formatter, OptionFormatter formatter2)",1
+org.apache.commons.cli.help,OptionFormatterTest,testAsOptional,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testAsSyntaxOption,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testComplexDeprecationFormat,"(DeprecatedAttributes da, String expected)",1
+org.apache.commons.cli.help,OptionFormatterTest,testCopyConstructor,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testDefaultSyntaxFormat,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testGetBothOpt,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testGetDescription,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetArgumentNameDelimiters,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetDefaultArgName,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetLongOptPrefix,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetOptArgumentSeparator,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetOptSeparator,"()",1
+org.apache.commons.cli.help,OptionFormatterTest,testSetSyntaxFormatFunction,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,setUp,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,tesstMakeColumnQueue,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAdjustTableFormat,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppend,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendHeader,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendParagraph,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendParagraphFormat,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendTable,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testAppendTitle,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testGetStyleBuilder,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testindexOfWrapPos,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testindexOfWrapPosWithWhitespace,"(Character c, boolean isWhitespace)",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testPrintWrapped,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testResize,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testResizeTableFormat,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testSetIndent,"()",1
+org.apache.commons.cli.help,TextHelpAppendableTest,testWriteColumnQueues,"()",1
+org.apache.commons.cli.help,TextStyleTests,padTestData,"()",1
+org.apache.commons.cli.help,TextStyleTests,testDefaultStyle,"()",1
+org.apache.commons.cli.help,TextStyleTests,testPad,"(TextStyle underTest, String unindentedString, String indentedString)",1
+org.apache.commons.cli.help,UtilTest,testFindNonWhitespacePos,"()",1
+org.apache.commons.cli.help,UtilTest,testFindNonWhitespacePos,"(Character c, boolean isWhitespace)",1
+org.apache.commons.cli.help,UtilTest,testIsEmpty,"()",1
+org.apache.commons.cli.help,UtilTest,testRtrim,"(Character c, boolean isWhitespace)",1
