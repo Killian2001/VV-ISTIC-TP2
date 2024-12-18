@@ -91,13 +91,44 @@ public class CyclomaticComplexity {
         }
     }
 
+    /**
+     * Represent a cyclomatic complexity measure entry.
+     */
     public static class CycloEntry {
+        /**
+         * Package of the class of the evaluated method.
+         */
         public final String packageName;
+
+        /**
+         * Name of the class of the evaluated method.
+         */
         public final String className;
+
+        /**
+         * Name of the evaluated method.
+         */
         public final String methodName;
+
+        /**
+         * Parameters list of the evaluated method.
+         */
         public final String paramList;
+
+        /**
+         * Cyclomatic number found for the evaluated method.
+         */
         public final int cyclomaticNumber;
 
+        /**
+         * Constructor of the class.
+         *
+         * @param packageName      Package of the class of the evaluated method.
+         * @param className        Name of the class of the evaluated method.
+         * @param methodName       Name of the class of the evaluated method.
+         * @param paramList        Parameters list of the evaluated method.
+         * @param cyclomaticNumber Cyclomatic number found for the evaluated method.
+         */
         public CycloEntry(String packageName, String className, String methodName, String paramList,
                 int cyclomaticNumber) {
             this.packageName = packageName;
