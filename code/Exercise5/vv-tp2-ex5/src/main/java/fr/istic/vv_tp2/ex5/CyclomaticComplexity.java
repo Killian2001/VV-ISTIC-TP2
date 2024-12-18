@@ -19,6 +19,9 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Main class of the Cyclomatic Complexity calculator.
+ */
 public class CyclomaticComplexity {
 
     // Exporters used by the program.
@@ -27,6 +30,12 @@ public class CyclomaticComplexity {
             new BarplotCycloExporter(),
     };
 
+    /**
+     * Cyclomatic Complexity calculator entry point.
+     *
+     * @param args Program's arguments : should contain the folder of a project.
+     * @throws IOException If an I/O error occurs.
+     */
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
             System.err.println(
@@ -51,6 +60,16 @@ public class CyclomaticComplexity {
         }
     }
 
+    /**
+     * Explore recursively a directory in order to find <code>.java</code> files
+     * in it, and calculate cyclomatic complexity of their methods.
+     *
+     * @param path         Directory's path.
+     * @param cycloEntries List of cyclomatic complexity entries, to be expanded
+     *                     by complexity measurements of methods found in Java files inside the
+     *                     directory.
+     * @throws IOException If any I/O error occur.
+     */
     private static void exploreDirectory(String path, List<CycloEntry> cycloEntries)
             throws IOException {
         File file = new File(path);
@@ -70,6 +89,13 @@ public class CyclomaticComplexity {
             exploreCompilationUnit(file, cycloEntries);
     }
 
+    /**
+     * Extract cyclomatic complexity of methods from a given compilation unit.
+     * @param inputFile Compilation unit's file.
+     * @param cycloEntries List of cyclomatic complexity entries to be filled by inspecting
+     *                     the file.
+     * @throws FileNotFoundException If the file is not found.
+     */
     private static void exploreCompilationUnit(File inputFile, List<CycloEntry> cycloEntries)
             throws FileNotFoundException {
         CompilationUnit unit = StaticJavaParser.parse(inputFile);
@@ -84,6 +110,12 @@ public class CyclomaticComplexity {
             exploreClass(intClass, cycloEntries, packageName);
     }
 
+    /**
+     *
+     * @param intClass
+     * @param cycloEntries
+     * @param packageName
+     */
     private static void exploreClass(ClassOrInterfaceDeclaration intClass,
             List<CycloEntry> cycloEntries,
             String packageName) {
