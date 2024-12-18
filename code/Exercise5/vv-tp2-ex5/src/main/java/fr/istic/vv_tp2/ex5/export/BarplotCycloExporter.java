@@ -12,6 +12,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Exports data into a bar plot, which is sorted by descending cyclomatic complexities.
+ */
 public class BarplotCycloExporter implements CycloExporter {
 
     private static final int EXPORT_WIDTH = 800;

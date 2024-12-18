@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+/**
+ * Exports data into a CSV file, sorted by descending cyclomatic complexities.
+ */
 public class CSVCycloExporter implements CycloExporter {
     @Override
     public void export(String projectName, List<CyclomaticComplexity.CycloEntry> cycloEntries)
