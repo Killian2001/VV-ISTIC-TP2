@@ -18,9 +18,18 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import java.util.Optional;
 
-class CyclomaticComplexityVisitor extends
+/**
+ * Visitor used to evaluate the cyclomatic complexity of a method.
+ */
+public class CyclomaticComplexityVisitor extends
         VoidVisitorAdapter<CyclomaticComplexityVisitor.CycloCounter> {
 
+    /**
+     * Statement dispatch method.
+     *
+     * @param stat    Statement.
+     * @param counter Cyclomatic complexity counter.
+     */
     private void dispatchStat(Statement stat, CycloCounter counter) {
         stat.ifBreakStmt(s -> s.accept(this, counter));
         stat.ifBreakStmt(s -> s.accept(this, counter));
@@ -64,7 +73,8 @@ class CyclomaticComplexityVisitor extends
         counter.addVertices(2);
         counter.addEdges(3);
 
-        statement.getBody().accept(this, counter);
+        statement.getBody()
+                .accept(this, counter);
     }
 
     @Override
@@ -72,7 +82,8 @@ class CyclomaticComplexityVisitor extends
         counter.addVertices(3);
         counter.addEdges(5);
 
-        statement.getBody().accept(this, counter);
+        statement.getBody()
+                .accept(this, counter);
     }
 
     @Override
@@ -80,7 +91,8 @@ class CyclomaticComplexityVisitor extends
         counter.addVertices(3);
         counter.addEdges(5);
 
-        statement.getBody().accept(this, counter);
+        statement.getBody()
+                .accept(this, counter);
     }
 
     @Override
@@ -89,13 +101,15 @@ class CyclomaticComplexityVisitor extends
         counter.addEdges(3); // if edges + else edge.
 
         // if block node.
-        statement.getThenStmt().accept(this, counter);
+        statement.getThenStmt()
+                .accept(this, counter);
 
         // else block node.
         Optional<Statement> elseStat = statement.getElseStmt();
         if (elseStat.isPresent()) {
             counter.addEdges(1);
-            elseStat.get().accept(this, counter);
+            elseStat.get()
+                    .accept(this, counter);
         }
     }
 
@@ -121,14 +135,16 @@ class CyclomaticComplexityVisitor extends
 
         for (CatchClause catchClause : statement.getCatchClauses()) {
             counter.addEdges(2); // input and output edges of the clause.
-            catchClause.getBody().accept(this, counter);
+            catchClause.getBody()
+                    .accept(this, counter);
         }
 
         // get the finally statement.
         Optional<BlockStmt> finallyStat = statement.getFinallyBlock();
         if (finallyStat.isPresent()) {
             counter.addEdges(1);    // output edge of the finally block.
-            finallyStat.get().accept(this, counter);
+            finallyStat.get()
+                    .accept(this, counter);
         }
     }
 
@@ -137,24 +153,43 @@ class CyclomaticComplexityVisitor extends
         counter.addVertices(3);
         counter.addEdges(5);
 
-        statement.getBody().accept(this, counter);
+        statement.getBody()
+                .accept(this, counter);
     }
 
+    /**
+     * Cyclomatic complexity counter.
+     * Counts the number of vertices and edges in the control flow graph
+     * of the method.
+     */
     public static class CycloCounter {
         private int vertices = 0;
         private int edges = 0;
 
-        public CycloCounter() {
-        }
-
+        /**
+         * Add a given number of vertices.
+         *
+         * @param v Number of vertices to add.
+         */
         public void addVertices(int v) {
             vertices += v;
         }
 
+        /**
+         * Add a given number of edges.
+         *
+         * @param e Number of edges to add.
+         */
         public void addEdges(int e) {
             edges += e;
         }
 
+        /**
+         * Calculates the cyclomatic number of the method from the number of vertices and edges
+         * from the method's control flow graph, under the hypothesis the CFG is connected.
+         *
+         * @return The cyclomatic complexity of the method <code>edges - vertices + 2</code>
+         */
         public int getCyclomaticNumber() {
             return edges - vertices + 2;
         }
