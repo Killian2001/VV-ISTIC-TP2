@@ -35,3 +35,16 @@ under the assumption that the control-flow graph of the method is connected.
 For each compilation unit, the visitor `CyclomaticUnitVisitor` keep tracks of each method cyclomatic complexity which is computed. Results are stored in the forms of records in a list, shared between all visitors executed by the program.
 
 Export is done by two classes, which implement both the `CycloExporter` interface : the class `CSVCycloExporter` export computed complexities in a CSV file, in descending order ; the class `BarplotCycloExporter` creates a bar plot from computed complexities, also order by descending complexities. Each `CycloExporter` use the cyclomatic complexity records list to produce the export.
+
+### Experiments over Apache libraries.
+
+We ran the cyclomatic complexity calculator over the following Apache libraries :
+
+- Apache Commons CLI
+- Apache Commons Collections
+- Apache Commons Lang
+- Apache Commons Math
+
+The results are the following :
+
+- For Apache Common CLI :
