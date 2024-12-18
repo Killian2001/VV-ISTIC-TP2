@@ -13,6 +13,10 @@ public class CSVCycloExporter implements CycloExporter {
     public void export(String projectName, List<CyclomaticComplexity.CycloEntry> cycloEntries)
             throws
             IOException {
+        // Sort data by descending order.
+        cycloEntries.sort((entry1, entry2) -> Integer.compare(entry2.cyclomaticNumber,
+                entry1.cyclomaticNumber));
+
         File outputFile = new File(projectName + "_report_cc.csv");
 
         try (PrintWriter output = new PrintWriter(new FileOutputStream(outputFile))) {
