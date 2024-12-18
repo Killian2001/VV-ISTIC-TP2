@@ -6,5 +6,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface CycloExporter {
-    void export(String path, List<CyclomaticComplexity.CycloEntry> cycloEntries) throws IOException;
+    void export(String projectName, List<CyclomaticComplexity.CycloEntry> cycloEntries) throws IOException;
 }

@@ -35,14 +35,20 @@ public class CyclomaticComplexity {
         }
 
         String path = args[0];
+        String projectName = new File(path).getName();
+
+        System.out.println("Analyzing the project...");
 
         // Run the analysis.
         List<CycloEntry> cycloEntries = new ArrayList<>();
-        exploreDirectory(path, cycloEntries);
+        exploreDirectory(args[0], cycloEntries);
 
         // Export results.
-        for (CycloExporter exporter : EXPORTERS)
-            exporter.export(args[0], cycloEntries);
+        int exportersCount = EXPORTERS.length;
+        for (int i = 0; i < exportersCount; i++) {
+            System.out.printf("Exporting... [%d/%d]%n", i + 1, exportersCount);
+            EXPORTERS[i].export(projectName, cycloEntries);
+        }
     }
 
     private static void exploreDirectory(String path, List<CycloEntry> cycloEntries)

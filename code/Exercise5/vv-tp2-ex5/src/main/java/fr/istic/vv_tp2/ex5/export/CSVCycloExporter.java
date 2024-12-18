@@ -10,22 +10,20 @@ import java.util.List;
 
 public class CSVCycloExporter implements CycloExporter {
     @Override
-    public void export(String path, List<CyclomaticComplexity.CycloEntry> cycloEntries) throws
+    public void export(String projectName, List<CyclomaticComplexity.CycloEntry> cycloEntries)
+            throws
             IOException {
-        File inputFile = new File(path);
-        File outputFile = new File(inputFile.getName() + "_report_cc.csv");
+        File outputFile = new File(projectName + "_report_cc.csv");
 
         try (PrintWriter output = new PrintWriter(new FileOutputStream(outputFile))) {
             // Print file's header.
             output.println("Package,Declaring class,Method,Params,CC");
 
-            for (CyclomaticComplexity.CycloEntry entry : cycloEntries) {
-                String csvLine =
-                        String.format("%s,%s,%s,%s,%s", entry.packageName, entry.className,
-                                entry.methodName, entry.paramList,
-                                entry.cyclomaticNumber);
-                output.println(csvLine);
-            }
+            // Prints all cyclomatic entries.
+            for (CyclomaticComplexity.CycloEntry entry : cycloEntries)
+                output.printf("%s,%s,%s,%s,%s%n", entry.packageName, entry.className,
+                        entry.methodName, entry.paramList,
+                        entry.cyclomaticNumber);
         }
     }
 }
