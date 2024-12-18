@@ -10,6 +10,10 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import java.util.List;
 
+/**
+ * Visitor used to compute cyclomatic complexities of all methods from a
+ * compilation unit.
+ */
 public class CyclomaticUnitVisitor extends
         VoidVisitorAdapter<CyclomaticUnitVisitor.CycloUnitParam> {
 
@@ -65,6 +69,13 @@ public class CyclomaticUnitVisitor extends
         }
     }
 
+    /**
+     * Calculates the cyclomatic complexity of a method.
+     *
+     * @param declaration AST node of the declaration of the method to evaluate.
+     * @return The cyclomatic number of the method declared by <code>declaration</code>.
+     * @see CyclomaticComplexityVisitor
+     */
     public int calculateCyclomaticComplexity(MethodDeclaration declaration) {
         CyclomaticComplexityVisitor visitor = new CyclomaticComplexityVisitor();
         CyclomaticComplexityVisitor.CycloCounter counter =
@@ -75,10 +86,25 @@ public class CyclomaticUnitVisitor extends
         return counter.getCyclomaticNumber();
     }
 
+    /**
+     * Parameter of this visitor's methods.
+     */
     public static class CycloUnitParam {
+        /**
+         * Name of the current package.
+         */
         String packageName;
+
+        /**
+         * List of cyclomatic entries to expand.
+         */
         final List<CyclomaticComplexity.CycloEntry> cycloEntries;
 
+        /**
+         * Constructor of the class.
+         *
+         * @param cycloEntries List of cyclomatic entries to expand.
+         */
         public CycloUnitParam(List<CyclomaticComplexity.CycloEntry> cycloEntries) {
             this.cycloEntries = cycloEntries;
         }
