@@ -27,3 +27,17 @@ The program should take as input the path to the source code of the project. It 
 Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 *Disclaimer* In a real project not all fields need to be accessed with a public getter.
+
+
+## Answers
+
+The program can be found [here](../code/Exercise4/vv-tp2-ex4/). You can it through its main class 
+`GetterFinder`. The program takes as argument the path of the folder to analyze.
+
+This program first explores recursively the project directory ; it visits each compilation unit 
+using a visitor over the unit's AST, and for each public class declaration in the unit,
+finds every private field of the class and check there is no getter associated to it. To
+find such getters, for a give attribute `name`, we search public methods called `getName`.
+If there is no such method, the field is identified as having no getters. Results are
+exported through a `PrintWriter` into a CSV file. An analysis over the Commons Lang project
+can be found [here](../code/Exercise4/vv-tp2-ex4/commons-lang_report_no_getter.csv).
