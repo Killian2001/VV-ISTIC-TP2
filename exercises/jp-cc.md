@@ -10,7 +10,8 @@ You may use [javaparser-starter](../code/javaparser-starter) as a starting point
 
 ## Answers
 
-See the code [here](../code/Exercise5/vv-tp2-ex5/).
+See the code [here](../code/Exercise5/vv-tp2-ex5/). Analysis reports and
+charts can also be found here.
 
 ### Run the progam
 
