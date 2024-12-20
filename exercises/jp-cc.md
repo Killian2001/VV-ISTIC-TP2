@@ -12,6 +12,11 @@ You may use [javaparser-starter](../code/javaparser-starter) as a starting point
 
 See the code [here](../code/Exercise5/vv-tp2-ex5/).
 
+### Run the progam
+
+You can run the program through its main class `CyclomaticComplexity`. The program takes as argument
+the path of the folder to analyze.
+
 ### Functionalities
 
 The cyclomatic complexity analyzer includes the following functionalities :
